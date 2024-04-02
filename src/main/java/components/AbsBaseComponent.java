@@ -11,8 +11,8 @@ import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
 public abstract class AbsBaseComponent<T> {
-    {
-        getComponentEntity().shouldBe(Condition.visible)
+   /* {
+        getComponentEntity().shouldBe(Condition.visible);
     }
 
     private By locatorAnalyzer(String value){
@@ -29,10 +29,10 @@ public abstract class AbsBaseComponent<T> {
         Class clazz = this.getClass();
         if (clazz.isAnnotationPresent(Component.class)){
             Component component = (Component) clazz.getAnnotation(Component.class);
-            By by = locatorAnalyzer(component.value());
+            //By by = locatorAnalyzer(component.valueOf());
 
 
         }
         return null;
-    }
+    }*/
 }

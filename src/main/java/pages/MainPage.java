@@ -21,10 +21,8 @@ public class MainPage extends AbsBasePage<MainPage> {
         return this;
     }
 
-    public ChatPage clickChatButton(){
-        ${"[text='chat']"}.
-    }
+    //public ChatPage clickChatButton(){        ${"[text='chat']"}.    }
 
-    public MainPage next
+    //public MainPage next
 
 }

@@ -25,7 +25,7 @@ public class AndroidWebDriverProvider implements WebDriverProvider {
         options.setPlatformVersion(System.getProperty("platform.version"));
         options.setApp(System.getProperty("user.dir")+"src/main/resources/Andy.apk");
         try {
-        return new AndroidDriver(new URL(Configuration.remote);
+        return new AndroidDriver(new URL(Configuration.remote),options);
     } catch (MalformedURLException e) {
             throw new RuntimeException(e);
         }
