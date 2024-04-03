@@ -3,6 +3,7 @@ package modules;
 import com.google.inject.AbstractModule;
 import com.google.inject.Provides;
 import com.google.inject.Singleton;
+import pages.ChatPage;
 import pages.MainPage;
 
 public class GuicePagesModule extends AbstractModule {
@@ -10,5 +11,10 @@ public class GuicePagesModule extends AbstractModule {
     @Singleton
     public MainPage getMainPage(){
         return new MainPage();
+    }
+    @Provides
+    @Singleton
+    public ChatPage getChaTPage(){
+        return new ChatPage();
     }
 }

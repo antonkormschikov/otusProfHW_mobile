@@ -60,8 +60,6 @@
                     <showDeprecation>false</showDeprecation>
                 </configuration>
             </plugin>
-
         </plugins>
     </build>
-
 </project>
